@@ -1,5 +1,5 @@
 import { Github, Linkedin } from 'lucide-react';
-import MaxWidthWrapper from '@/app/components/MaxWidthWrapper';
+import MaxWidthWrapper from '../components/MaxWidthWrapper';
 import Image from 'next/image';
 
 export default function Hero() {
