@@ -1,10 +1,11 @@
+import Image from 'next/image';
 import React from 'react';
 
 const Projects = () => {
 	const portfolioList = [
 		{
 			id: 1,
-			img: 'portfolio1.png',
+			img: '/portfolio1.png',
 			title: 'Вебсайт для компании',
 			description:
 				'Сайты различной сложности и функциональности, начиная от корпоративных сайтов',
@@ -16,7 +17,7 @@ const Projects = () => {
 		},
 		{
 			id: 2,
-			img: 'portfolio2.png',
+			img: '/portfolio2.png',
 			title: 'Вебсайт для компании',
 			description:
 				'Сайты различной сложности и функциональности, начиная от корпоративных сайтов',
@@ -28,7 +29,7 @@ const Projects = () => {
 		},
 		{
 			id: 3,
-			img: 'portfolio3.png',
+			img: '/portfolio3.png',
 			title: 'Вебсайт для компании',
 			description:
 				'Сайты различной сложности и функциональности, начиная от корпоративных сайтов',
@@ -40,7 +41,7 @@ const Projects = () => {
 		},
 		{
 			id: 4,
-			img: 'portfolio1.png',
+			img: '/portfolio1.png',
 			title: 'Вебсайт для компании',
 			description:
 				'Сайты различной сложности и функциональности, начиная от корпоративных сайтов',
@@ -52,7 +53,7 @@ const Projects = () => {
 		},
 		{
 			id: 5,
-			img: 'portfolio1.png',
+			img: '/portfolio1.png',
 			title: 'Вебсайт для компании',
 			description:
 				'Сайты различной сложности и функциональности, начиная от корпоративных сайтов',
@@ -81,7 +82,9 @@ const Projects = () => {
 						className='flex flex-col gap-5 max-w-[300px] min-w-[300px] items-center lg:items-start'
 					>
 						<div className='flex relative'>
-							<img
+							<Image
+								width={300}
+								height={300}
 								src={item.img}
 								alt='website example'
 								className='rounded-[40px]'
