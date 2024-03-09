@@ -21,28 +21,22 @@ export default function About() {
 							<h1 className='text-3xl font-semibold mt-10 lg:mt-0'>
 								Front-end Developer based in Taraz, Kazakhstan📍
 							</h1>
-							<p className='text-xl w-full'>
+							<p className='text-xl w-full text-secondary'>
 								Hey, my name is Aidyn, and I'm a Frontend Developer. My passion
 								is to create and develop a clean UI/UX for my users.
 							</p>
-							<p>
+							<p className='text-secondary'>
 								My main stack currently is{' '}
-								<a
-									className='text-black-400 underline'
-									href='https://nextjs.org/'
-								>
+								<a className='text-black-400 ' href='https://nextjs.org/'>
 									React/NextJs
 								</a>{' '}
 								in combination with{' '}
-								<a
-									className='text-green-400 underline'
-									href='https://tailwindcss.com/'
-								>
+								<a className='text-green-400 ' href='https://tailwindcss.com/'>
 									Tailwindcss
 								</a>{' '}
 								and{' '}
 								<a
-									className='text-blue-400 underline'
+									className='text-blue-400 '
 									href='		https://www.typescriptlang.org/ '
 								>
 									Typescript

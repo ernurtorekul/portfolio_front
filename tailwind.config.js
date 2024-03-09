@@ -9,12 +9,12 @@ module.exports = {
 		extend: {
 			backgroundColor: {
 				primary: 'white',
-				violet: '#4B40BB',
+				violet: '#005570',
 				secondary: '#f9f9f9',
 			},
 			colors: {
 				primary: 'white', // blue
-				violet: '#4B40BB', // violet
+				violet: '#005570', // violet
 				secondary: '#6b6b6b', // gray - p
 			},
 		},
