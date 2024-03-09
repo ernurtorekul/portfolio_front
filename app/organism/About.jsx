@@ -22,12 +22,31 @@ export default function About() {
 								Front-end Developer based in Taraz, Kazakhstan📍
 							</h1>
 							<p className='text-xl w-full'>
-								Hey, my name is Stefan, and Im a Frontend Developer. My passion
+								Hey, my name is Aidyn, and I'm a Frontend Developer. My passion
 								is to create and develop a clean UI/UX for my users.
 							</p>
 							<p>
-								My main stack currently is React/Next.js in combination with
-								Tailwind CSS and TypeScript.
+								My main stack currently is{' '}
+								<a
+									className='text-black-400 underline'
+									href='https://nextjs.org/'
+								>
+									React/NextJs
+								</a>{' '}
+								in combination with{' '}
+								<a
+									className='text-green-400 underline'
+									href='https://tailwindcss.com/'
+								>
+									Tailwindcss
+								</a>{' '}
+								and{' '}
+								<a
+									className='text-blue-400 underline'
+									href='		https://www.typescriptlang.org/ '
+								>
+									Typescript
+								</a>
 							</p>
 						</div>
 					</div>

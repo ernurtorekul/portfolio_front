@@ -3,6 +3,12 @@ import MaxWidthWrapper from '../components/MaxWidthWrapper';
 import Image from 'next/image';
 
 export default function Hero() {
+	const stackList = [
+		'html_css.svg',
+		'js_ts.svg',
+		'react_nextjs.svg',
+		'tailwind_sass.svg',
+	];
 	return (
 		<>
 			<section className='px-20 pb-20 bg-secondary lg:justify-center lg:p-20'>
@@ -38,38 +44,11 @@ export default function Hero() {
 						<p className='text-2xl rotate-90 lg:rotate-0 '>|</p>
 						<div>
 							<ul className='flex gap-10 w-full'>
-								<li>
-									<Image
-										src='/html_css.svg'
-										width={100}
-										height={100}
-										alt='stack'
-									/>
-								</li>
-								<li>
-									<Image
-										src='/js_ts.svg'
-										width={100}
-										height={100}
-										alt='stack'
-									/>
-								</li>
-								<li>
-									<Image
-										src='/react_nextjs.svg'
-										width={100}
-										height={100}
-										alt='stack'
-									/>
-								</li>
-								<li>
-									<Image
-										src='/tailwind_sass.svg'
-										width={100}
-										height={100}
-										alt='stack'
-									/>
-								</li>
+								{stackList.map(item => (
+									<li key={item}>
+										<Image src={item} width={100} height={100} alt='stack' />
+									</li>
+								))}
 							</ul>
 						</div>
 					</div>

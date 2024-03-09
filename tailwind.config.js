@@ -13,9 +13,9 @@ module.exports = {
 				secondary: '#f9f9f9',
 			},
 			colors: {
-				primary: 'white',
-				violet: '#4B40BB',
-				secondary: '#343434',
+				primary: 'white', // blue
+				violet: '#4B40BB', // violet
+				secondary: '#6b6b6b', // gray - p
 			},
 		},
 	},

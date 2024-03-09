@@ -70,7 +70,7 @@ const Projects = () => {
 			className='flex flex-col items-center gap-5 bg-secondary py-20'
 		>
 			<h4 className='text-4xl font-semibold'>Projects</h4>
-			<p className='w-2/3 lg:w-full text-lg text-center'>
+			<p className='w-2/3 lg:w-full text-lg text-center text-secondary'>
 				Here I proudly present some of my best <br />
 				projects completed for valued clients.
 			</p>
@@ -93,7 +93,7 @@ const Projects = () => {
 							</div>
 						</div>
 						<div className='pl-2'>
-							<h5 className='text-xl font-semibold mb-2'>{item.title}</h5>
+							<h5 className='text-xl font-medium mb-2'>{item.title}</h5>
 							<p className='text-xs text-secondary'>{item.description}</p>
 						</div>
 						<button className=' text-white  rounded-full w-40 h-10 bg-[#4B40BB]'>
