@@ -38,7 +38,7 @@ const Contact = () => {
 			<div className='flex flex-col gap-5 w-full lg:w-1/2 items-center lg:items-start text-center lg:text-start'>
 				<h5 className='font-semibold text-3xl'>Contact with me</h5>
 				<p className='w-full lg:w-3/4 text-lg text-secondary'>
-					I'&apos;m always open to discussing new projects, creative ideas, or
+					I&apos;m always open to discussing new projects, creative ideas, or
 					opportunities to be part of your visions. If you&apos;re interested in
 					working together or just want to say hi, feel free to reach out
 					through the form below or email me directly. Let&apos;s make something
