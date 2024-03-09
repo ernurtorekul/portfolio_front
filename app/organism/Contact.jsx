@@ -5,25 +5,26 @@ import emailjs from 'emailjs-com';
 const handleSubmit = e => {
 	e.preventDefault();
 
+	const serviceId = process.env.NEXT_PUBLIC_SERVICE_ID;
+	const tempalteId = process.env.NEXT_PUBLIC_TEMPLATE_ID;
+	const privateKey = process.env.NEXT_PUBLIC_PRIVATE_KEY;
+
+	console.log(serviceId);
+	console.log(tempalteId);
+	console.log(privateKey);
+
 	const message = e.target;
-	emailjs
-		.sendForm(
-			'service_0fypdf2',
-			'template_z1rtxeh',
-			message,
-			'3BzI2s1D0Zzh5WA4Q'
-		)
-		.then(
-			result => {
-				console.log(result.text);
-				alert('Message sent successfully!');
-				e.target.reset();
-			},
-			error => {
-				console.log(error.text);
-				alert('Failed to send the message, please try again.');
-			}
-		);
+	emailjs.sendForm(serviceId, tempalteId, message, privateKey).then(
+		result => {
+			console.log(result.text);
+			alert('Message sent successfully!');
+			e.target.reset();
+		},
+		error => {
+			console.log(error.text);
+			alert('Failed to send the message, please try again.');
+		}
+	);
 };
 
 const Contact = () => {
