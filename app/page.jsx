@@ -6,6 +6,7 @@ import Hero from './organism/Hero.jsx';
 import Projects from './organism/Projects.jsx';
 
 export default function Home() {
+
 	return (
 		<>
 			<Header />

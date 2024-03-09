@@ -1,11 +1,16 @@
 'use client';
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
+import Loader from '../components/Loader';
 
 const Contact = () => {
 	const [errorMessage, setErrorMessage] = useState();
+	const [isLoading, setIsLoading] = useState();
+
 	const handleSubmit = e => {
 		e.preventDefault();
+		setErrorMessage('');
+		setIsLoading(true);
 		const form = e.target;
 
 		const serviceId = process.env.NEXT_PUBLIC_SERVICE_ID;
@@ -15,6 +20,7 @@ const Contact = () => {
 		if (form.message.value == '' && form.email.value == '') {
 			console.log('yeyyy');
 			setErrorMessage('Please enter data');
+			setIsLoading(false);
 			return;
 		}
 		try {
@@ -22,6 +28,7 @@ const Contact = () => {
 				() => {
 					alert('Message sent successfully!');
 					form.reset();
+					setIsLoading(false);
 				},
 				error => {
 					console.log(error.text);
@@ -31,10 +38,14 @@ const Contact = () => {
 		} catch (err) {
 			console.log(err);
 			alert('An unexpected error occurred, please try again.');
+			setIsLoading(false);
 		}
 	};
 	return (
-		<section className='flex flex-col lg:flex-row items-center justify-center py-20 gap-20 p-0 lg:px-20'>
+		<section className='flex flex-col lg:flex-row items-center justify-center 
+		py-20 gap-20 p-0 lg:px-20'>
+				{isLoading && <Loader />}
+
 			<div className='flex flex-col gap-5 w-full lg:w-1/2 items-center lg:items-start text-center lg:text-start'>
 				<h5 className='font-semibold text-3xl'>Contact with me</h5>
 				<p className='w-full lg:w-3/4 text-lg text-secondary'>
@@ -55,7 +66,7 @@ const Contact = () => {
 					<p className='text-red-500'>{errorMessage}</p>
 					<input
 						className='input'
-						type='text'
+						type='email'
 						name='email'
 						placeholder='E-mail'
 					/>
