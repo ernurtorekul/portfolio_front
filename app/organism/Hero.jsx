@@ -19,7 +19,7 @@ export default function Hero() {
 								Front-end React Developer 👋
 							</h1>
 							<p className='text-xl w-full lg:w-2/3'>
-								Hi, im Aidyn Meiramkhanuly. A passionate Front-end React
+								Hi, im Ernur Torekul. A passionate Front-end React
 								Developer based in Taraz, Kazakhstan. 📍
 							</p>
 							<div className='flex gap-5'>

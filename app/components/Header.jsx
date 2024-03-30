@@ -7,8 +7,8 @@ export function Header() {
 				href='#'
 				className='logo flex items-center text-2xl tracking-wide gap-[2px]'
 			>
-				<Image src='/logo.png' alt='logo' width={40} height={50} />
-				ashkanitto
+				{/* <Image src='/logo.png' alt='logo' width={40} height={50} /> */}
+				Ernur
 			</a>
 			<nav>
 				<ul className='hidden lg:flex gap-5 font-normal h-[40px] items-center'>
