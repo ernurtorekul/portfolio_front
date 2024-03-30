@@ -32,7 +32,7 @@ export default function Hero() {
 							</div>
 						</div>
 						<Image
-							src='/herobg.jpeg'
+							src='/ernur.jpg'
 							className='hero-animate float-right brightness-150'
 							width={400}
 							height={400}

@@ -22,7 +22,7 @@ export default function About() {
 								Front-end Developer based in Taraz, Kazakhstan📍
 							</h1>
 							<p className='text-xl w-full text-secondary'>
-								Hey, my name is Aidyn, and I&apos;m a Frontend Developer. My
+								Hey, my name is Ernur, and I&apos;m a Frontend Developer. My
 								passion is to create and develop a clean UI/UX for my users.
 							</p>
 							<p className='text-secondary'>
