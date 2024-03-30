@@ -1,4 +1,3 @@
-<img width="1470" alt="image" src="https://github.com/Bashkanitto/portfolio/assets/86559848/9a3f3392-08ca-4cbc-a453-72d0ee73fa1d">
 
 
 ## Getting Started
