@@ -17,6 +17,9 @@ module.exports = {
 				violet: '#005570', // violet
 				secondary: '#6b6b6b', // gray - p
 			},
+			spacing: {
+				'1/6': '16.666%', // Custom spacing for ml-[16.666%]
+			},
 		},
 	},
 	plugins: [],

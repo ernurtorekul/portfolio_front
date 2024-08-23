@@ -1,7 +1,7 @@
 import '../globals.css';
 
 export const metadata = {
-	title: 'Ernur | Front-end React developer',
+	title: 'Ernur | Front-end React `developer',
 	description:
 		'A passionate Front-end React Developer based in Taraz, Kazakhstan',
 };
