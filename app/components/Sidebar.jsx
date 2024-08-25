@@ -11,8 +11,7 @@ import Socials from "../components/miniComponents/Socials";
 import { FaDownload } from "react-icons/fa";
 import { RxHamburgerMenu } from "react-icons/rx";
 
-function SidebarComponent() {
-  const [isSidebarVisible, setIsSidebarVisible] = useState(false);
+function SidebarComponent({ isSidebarVisible, setIsSidebarVisible }) {
   const sidebarRef = useRef(null);
 
   const handleButtonClick = (e) => {
@@ -38,16 +37,16 @@ function SidebarComponent() {
 
   return (
     <div className="relative">
-      <div className="block lg:hidden">
-        <button onClick={handleButtonClick} className="p-2 w-16 h-16 fixed">
+      <div className="block lg:hidden fixed top-4 left-4 z-50">
+        <button onClick={handleButtonClick} className="p-2 w-16 h-16">
           <RxHamburgerMenu className="w-3/4 h-3/4" />
         </button>
       </div>
       <div
         ref={sidebarRef}
-        className={`h-[95vh] w-1/6 fixed bg-gray-300 rounded-3xl top-1/2 transform -translate-y-1/2 overflow-y-auto ${
+        className={`h-[95vh] w-4/6 sm:w-3/6 md:w-2/6 lg:w-1/6 fixed bg-gray-300 rounded-3xl top-1/2 transform -translate-y-1/2 overflow-y-auto transition-transform duration-300 ease-in-out ${
           isSidebarVisible ? "block" : "hidden"
-        } lg:block z-10`}
+        } lg:block z-50`}
       >
         <div className="flex flex-col divide-white divide-y-4 ">
           <MeHeader />
@@ -60,11 +59,6 @@ function SidebarComponent() {
           <Socials />
         </div>
       </div>
-      <div
-        className={`transition-all duration-300 ${
-          isSidebarVisible ? "blur-md lg:blur-none pointer-events-none" : ""
-        }`}
-      ></div>
     </div>
   );
 }

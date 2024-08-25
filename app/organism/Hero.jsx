@@ -1,3 +1,4 @@
+'use client'
 import { Github, Linkedin } from "lucide-react";
 import MaxWidthWrapper from "../components/MaxWidthWrapper";
 import Image from "next/image";
@@ -8,10 +9,11 @@ export default function Hero() {
     "js_ts.svg",
     "react_nextjs.svg",
     "tailwind_sass.svg",
+    "ant_material.svg",
   ];
   return (
     <div className="bg-secondary">
-      <section className="ml-[16.666%] px-20 pb-20 bg-secondary lg:justify-center lg:p-20 ">
+      <section className="lg:ml-[16.666%] px-20 pb-20 bg-secondary lg:justify-center lg:p-20 ">
         <MaxWidthWrapper className="pt-10">
           <div className="flex flex-col-reverse  gap-15 lg:flex lg:flex-row items-center">
             <div className="flex flex-col gap-10 lg:items-start items-center text-center lg:text-start	">
@@ -42,15 +44,13 @@ export default function Hero() {
           <div className="stack flex flex-col lg:flex-row lg:flex gap-3 lg:gap-10 mt-20 items-center">
             <p>Tech Stack</p>
             <p className="text-2xl rotate-90 lg:rotate-0 ">|</p>
-            <div>
               <ul className="flex gap-10 w-full">
                 {stackList.map((item) => (
                   <li key={item}>
-                    <Image src={item} width={100} height={100} alt="stack" />
+                    <Image src={item} alt="stack" width={100} height={100} className=""/>
                   </li>
                 ))}
               </ul>
-            </div>
           </div>
         </MaxWidthWrapper>
       </section>

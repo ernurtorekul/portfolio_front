@@ -7,6 +7,10 @@
 	src: local('Poppins'), url('./public/fonts/Poppins-Regular.ttf') format('ttf');
 }
 
+:root{
+	--violet: #111827
+}
+
 * {
 	padding: 0;
 	margin: 0;
@@ -75,7 +79,7 @@ ul a:hover {
 .white-btn {
 	padding: 5px 20px;
 	border-radius: 50px;
-	border: 1px solid white;
+	border: 1px solid var(--violet);
 	transition: 0.5s;
 }
 
@@ -91,3 +95,4 @@ ul a:hover {
 	padding: 10px;
 	border-radius: 15px;
 }
+  

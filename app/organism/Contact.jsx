@@ -37,7 +37,6 @@ const Contact = () => {
     }
     try {
       emailjs.sendForm(serviceId, templateId, form, privateKey).then(
-        // emailjs.sendForm('7ezfGDNAnwE0paO7x', 'template_n675d23', form, 'O0aQuJa0u8TKSv-pCFN3Q').then(
         () => {
           alert("Message sent successfully!");
           form.reset();
@@ -56,13 +55,13 @@ const Contact = () => {
   };
   return (
     <section
-      className="ml-1/6 flex flex-col lg:flex-row items-center justify-center 
+      className="lg:ml-1/6 flex flex-col lg:flex-row items-center justify-center 
 		py-20 gap-20 p-0 lg:px-20 bg-white"
     >
       {isLoading && <Loader />}
 
       <div className="flex flex-col gap-5 w-full lg:w-1/2 items-center lg:items-start text-center lg:text-start">
-        <h5 className="font-semibold text-3xl">Contact with me</h5>
+        <h5 className="font-semibold text-3xl text-violet">Contact with me</h5>
         <p className="w-full lg:w-3/4 text-lg text-secondary">
           I&apos;m always open to discussing new projects, creative ideas, or
           opportunities to be part of your visions. If you&apos;re interested in
@@ -96,7 +95,7 @@ const Contact = () => {
           />
         </div>
         <button
-          className="bg-violet text-white rounded-lg w-40 h-10"
+          className="bg-violet text-white rounded-lg w-40 h-10 duration-300 hover:bg-white hover:text-violet"
           type="submit"
         >
           Send

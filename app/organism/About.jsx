@@ -6,7 +6,7 @@ export default function About() {
     <>
       <section
         id="about"
-        className="ml-[16.666%] p-5 lg:px-20 pb-20 lg:justify-center lg:p-20 bg-white"
+        className="lg:ml-[16.666%] p-5 lg:px-20 pb-20 lg:justify-center lg:p-20 bg-white"
       >
         <MaxWidthWrapper className="pt-10">
           <div className="flex flex-col-reverse  gap-15 lg:flex lg:flex-row items-center gap-10 ">
