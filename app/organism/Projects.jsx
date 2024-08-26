@@ -56,7 +56,7 @@ const Projects = () => {
           Here I proudly present some of my best <br />
           projects completed for valued clients.
         </p>
-        <div className="flex gap-10 w-[100%] overflow-x-auto justify-start px-5 lg:px-20 pb-10">
+        <div className="flex gap-10 w-[100%] overflow-x-auto scrollbar scrollbar-thumb-gray-900 scrollbar-track-gray-300 justify-start px-5 lg:px-20 pb-10">
           {portfolioList.map((item) => (
             <Link key={item.id} href={item.link} target="_blank" rel="noreferrer">
               <div

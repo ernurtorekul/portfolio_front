@@ -17,7 +17,7 @@ export default function Hero() {
         <MaxWidthWrapper className="pt-10">
           <div className="flex flex-col-reverse  gap-15 lg:flex lg:flex-row items-center">
             <div className="flex flex-col gap-10 lg:items-start items-center text-center lg:text-start	">
-              <h1 className="text-6xl font-bold mt-10 lg:mt-0">
+              <h1 className="text-5xl sm:text-6xl font-bold mt-10 lg:mt-0">
                 Front-end React Developer 👋
               </h1>
               <p className="text-xl w-full lg:w-2/3">
