@@ -1,4 +1,4 @@
-import ernur from "../../../public/ernur.jpg";
+import ernur_sidebar from "../../../public/ernur_sidebar.jpg";
 import { NAME, DESIGNATION } from "../../constants/constants";
 import Image from "next/image";
 import React from "react";
@@ -9,7 +9,7 @@ function MeHeader() {
       <div className=" h-48 bg-gray-900 top-0 flex items-center justify-center w-full flex-col px-4 gap-y-4">
         <Image
           className="w-20 h-20 rounded-full"
-          src={ernur}
+          src={ernur_sidebar}
           alt="profile picture"
         />
         <div className="flex flex-col items-center justify-center">
