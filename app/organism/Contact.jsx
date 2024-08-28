@@ -63,7 +63,7 @@ const Contact = () => {
       <div className="flex flex-col gap-5 w-full lg:w-1/2 items-center lg:items-start text-center lg:text-start">
         <h5 className="font-semibold text-3xl text-violet mb-2">Contact Me</h5>
         <p className="w-full lg:w-3/4 text-lg text-secondary mb-4">
-          Whether you have a question, a project idea, or just want to say hello, I'd love to hear from you. I'm always open to discussing new opportunities, collaborations, or simply sharing thoughts. Feel free to reach out, and I'll get back to you as soon as possible!
+          Whether you have a question, a project idea, or just want to say hello, I&apos;d love to hear from you. I&apos;m always open to discussing new opportunities, collaborations, or simply sharing thoughts. Feel free to reach out, and I&apos;ll get back to you as soon as possible!
         </p>
       </div>
 

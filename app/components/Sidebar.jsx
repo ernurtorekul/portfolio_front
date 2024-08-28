@@ -1,6 +1,6 @@
 "use client";
 import Languages from "./miniComponents/Languages";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 import MeHeader from "../components/miniComponents/MeHeader";
 import Location from "../components/miniComponents/Location";
 import Skills from "../components/miniComponents/Skills";

@@ -52,7 +52,7 @@ const Projects = () => {
       >
         <h4 className="text-4xl font-semibold">Projects</h4>
         <p className="w-2/3 lg:w-full text-lg text-center text-secondary">
-          Here are some of the best projects I've completed for my valued
+          Here are some of the best projects I&apos;ve completed for my valued
           clients.
         </p>
         <div className="flex gap-10 w-[100%] overflow-x-auto scrollbar scrollbar-thumb-gray-900 scrollbar-track-gray-300 justify-start px-5 lg:px-20 pb-10">

@@ -24,7 +24,7 @@ export default function Hero() {
                 Front-end React Developer 👋
               </h1>
               <p className="text-xl w-full lg:w-2/3">
-                Hello, I'm Ernur, a Front-end React Developer based in
+                Hello, I&apos;m Ernur, a Front-end React Developer based in
                 Kazakhstan.📍
               </p>
               <div className="flex gap-5">

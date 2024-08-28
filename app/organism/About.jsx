@@ -13,7 +13,7 @@ export default function About() {
               Crafting Modern, Intuitive Interfaces
             </h1>
             <p className="text-lg text-secondary max-w-prose">
-            I love creating clean and user-friendly designs that make using websites easy and enjoyable. I'm always learning new technologies to keep improving.
+            I love creating clean and user-friendly designs that make using websites easy and enjoyable. I&apos;m always learning new technologies to keep improving.
             </p>
             <div className="flex flex-col space-y-6 items-center">
               <p className="text-lg text-secondary">My expertise includes:</p>
