@@ -8,7 +8,7 @@ import { CONTACTS } from "../../constants/constants";
 
 const Socials = () => {
   return (
-    <div className="footer bg-gray-900 flex justify-center space-x-6 py-4 text-xl items-center w-full">
+    <div className="footer rounded-b-3xl bg-gray-900 flex justify-center space-x-6 py-4 text-xl items-center w-full">
       <Link href={SOCIAL_LINKS.GITHUB} target="_blank" rel="noreferrer">
         <LuGithub className="text-gray-300" />
       </Link>

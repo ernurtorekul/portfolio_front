@@ -56,49 +56,52 @@ const Contact = () => {
   return (
     <section
       className="lg:ml-1/6 flex flex-col lg:flex-row items-center justify-center 
-		py-20 gap-20 p-0 lg:px-20 bg-white"
+    py-20 gap-20 p-0 lg:px-20 bg-white"
     >
       {isLoading && <Loader />}
 
       <div className="flex flex-col gap-5 w-full lg:w-1/2 items-center lg:items-start text-center lg:text-start">
-        <h5 className="font-semibold text-3xl text-violet">Contact with me</h5>
-        <p className="w-full lg:w-3/4 text-lg text-secondary">
-          I&apos;m always open to discussing new projects, creative ideas, or
-          opportunities to be part of your visions. If you&apos;re interested in
-          working together or just want to say hi, feel free to reach out
-          through the form below or email me directly. Let&apos;s make something
-          amazing together!
+        <h5 className="font-semibold text-3xl text-violet mb-2">Contact Me</h5>
+        <p className="w-full lg:w-3/4 text-lg text-secondary mb-4">
+          Whether you have a question, a project idea, or just want to say hello, I'd love to hear from you. I'm always open to discussing new opportunities, collaborations, or simply sharing thoughts. Feel free to reach out, and I'll get back to you as soon as possible!
         </p>
-        <span className="text-secondary">P.s anecdotes also accepts ;</span>
       </div>
+
       <form
-        className="bg-secondary flex flex-col gap-5 px-5 py-10 rounded-2xl"
+        className="bg-secondary flex flex-col gap-5 px-8 py-10 rounded-2xl w-full lg:w-1/2"
         onSubmit={handleSubmit}
       >
-        <h5 className="font-medium text-xl pl-2">Get in touch</h5>
-        <div>
-          <p className="text-red-500">{errorMessage}</p>
-          <input
-            className="input"
-            type="email"
-            name="email"
-            placeholder="E-mail"
-          />
-        </div>
-        <div>
-          <p className="text-red-500 text-sm">{errorMessage}</p>
-          <textarea
-            className="w-full h-20 p-2 rounded-lg outline-none"
-            type="text"
-            name="message"
-            placeholder="Message"
-          />
+        <h5 className="font-medium text-2xl text-violet mb-4">Get in Touch</h5>
+        <div className="flex flex-col gap-4">
+          <div>
+            <input
+              className="w-full p-4 rounded-lg outline-none border border-gray-300 focus:ring-2 focus:ring-violet focus:border-violet"
+              type="email"
+              name="email"
+              placeholder="E-mail"
+              required
+            />
+            {errorMessage && (
+              <p className="text-red-500 text-sm mt-2">{errorMessage}</p>
+            )}
+          </div>
+          <div>
+            <textarea
+              className="w-full h-32 p-4 rounded-lg outline-none border border-gray-300 focus:ring-2 focus:ring-violet focus:border-violet"
+              name="message"
+              placeholder="Your Message"
+              required
+            />
+            {errorMessage && (
+              <p className="text-red-500 text-sm mt-2">{errorMessage}</p>
+            )}
+          </div>
         </div>
         <button
-          className="bg-violet text-white rounded-lg w-40 h-10 duration-300 hover:bg-white hover:text-violet"
+          className="bg-violet text-white font-semibold rounded-lg w-full py-3 mt-4 duration-300 hover:bg-secondary hover:text-violet border border-violet"
           type="submit"
         >
-          Send
+          Send Message
         </button>
       </form>
     </section>

@@ -1,7 +1,10 @@
-'use client'
-import { Github, Linkedin } from "lucide-react";
+"use client";
+import { Github, Linkedin, Mail } from "lucide-react";
 import MaxWidthWrapper from "../components/MaxWidthWrapper";
 import Image from "next/image";
+import Link from "next/link";
+import { CONTACTS } from "../constants/constants";
+import { SOCIAL_LINKS } from "../constants/constants";
 
 export default function Hero() {
   const stackList = [
@@ -21,15 +24,28 @@ export default function Hero() {
                 Front-end React Developer 👋
               </h1>
               <p className="text-xl w-full lg:w-2/3">
-                Hi, im Ernur Torekul. A passionate Front-end React Developer
-                based in Taraz, Kazakhstan. 📍
+                Hello, I'm Ernur, a Front-end React Developer based in
+                Kazakhstan.📍
               </p>
               <div className="flex gap-5">
                 <button>
-                  <Linkedin className="w-7 h-7 hover:text-blue-600 transition-all duration-200" />
+                  <Link
+                    href={SOCIAL_LINKS.LINKEDIN}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <Linkedin className="w-7 h-7 hover:text-secondary transition-all duration-200" />
+                  </Link>
                 </button>
                 <button>
-                  <Github className="w-7 h-7 hover:text-blue-600 transition-all duration-200" />
+                  <Link href={SOCIAL_LINKS.GITHUB} target="_blank" rel="noreferrer">
+                    <Github className="w-7 h-7 hover:text-secondary transition-all duration-200" />
+                  </Link>
+                </button>
+                <button>
+                  <Link href={`mailto:${CONTACTS.EMAIL}`} rel="noreferrer">
+                    <Mail className="w-7 h-7 hover:text-secondary transition-all duration-200" />
+                  </Link>
                 </button>
               </div>
             </div>
@@ -44,16 +60,43 @@ export default function Hero() {
           <div className="stack flex flex-col lg:flex-row lg:flex gap-3 lg:gap-10 mt-20 items-center">
             <p>Tech Stack</p>
             <p className="text-2xl rotate-90 lg:rotate-0 ">|</p>
-              <ul className="flex gap-10 w-full">
-                {stackList.map((item) => (
-                  <li key={item}>
-                    <Image src={item} alt="stack" width={100} height={100} className=""/>
-                  </li>
-                ))}
-              </ul>
+            <ul className="flex gap-1 sm:gap-10 w-full">
+              {stackList.map((item) => (
+                <li key={item}>
+                  <Image
+                    src={item}
+                    alt="stack"
+                    width={100}
+                    height={100}
+                    className=""
+                  />
+                </li>
+              ))}
+            </ul>
           </div>
         </MaxWidthWrapper>
       </section>
     </div>
   );
 }
+
+// project card
+// import React from "react";
+
+// function Hero() {
+//   return (
+//     <div className="bg-white shadow-md rounded-lg p-6 max-w-sm mx-auto">
+//       <h2 className="text-4xl font-bold mb-12 mt-4 flex justify-center tracking-wider">{"ContactSavvy"}</h2>
+//       <p className="text-gray-700 mb-12 tracking-tight text-lg ">The <span className="font-semibold text-black tracking-wider">'ContactSavvy'</span> web application is designed to offer users a refreshing alternative to conventional contact management systems.</p>
+//       <div className="flex items-center justify-center">
+//         <img
+//           src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/github.svg"
+//           alt="GitHub Icon"
+//           className="w-64 h-64 mb-12"
+//         />
+//       </div>
+//     </div>
+//   );
+// }
+
+// export default Hero;

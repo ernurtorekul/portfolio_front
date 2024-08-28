@@ -32,15 +32,14 @@ const Projects = () => {
     },
     {
       id: 3,
-      img: "/portfolio3.png",
-      title: "Вебсайт для компании",
-      link: "https://osamajavaid.vercel.app/",
-      description:
-        "Сайты различной сложности и функциональности, начиная от корпоративных сайтов",
+      img: "/projects/contactsavvy.png",
+      title: "Personalized Contact Manager",
+      link: "https://github.com/ernurtorekul/ContactSavvy",
+      description: "ContactSavvy: Smart Contact Organizer",
       project: {
-        type1: "Веб разработка",
-        type2: "Электронная коммерция",
-        type3: "Оптимизация и аналитика",
+        type1: "Web Development",
+        type2: "Personalization and User Experience",
+        type3: "Responsive and Secure Design",
       },
     },
   ];
@@ -53,15 +52,18 @@ const Projects = () => {
       >
         <h4 className="text-4xl font-semibold">Projects</h4>
         <p className="w-2/3 lg:w-full text-lg text-center text-secondary">
-          Here I proudly present some of my best <br />
-          projects completed for valued clients.
+          Here are some of the best projects I've completed for my valued
+          clients.
         </p>
         <div className="flex gap-10 w-[100%] overflow-x-auto scrollbar scrollbar-thumb-gray-900 scrollbar-track-gray-300 justify-start px-5 lg:px-20 pb-10">
           {portfolioList.map((item) => (
-            <Link key={item.id} href={item.link} target="_blank" rel="noreferrer">
-              <div
-                className="flex flex-col gap-5 max-w-[350px] min-w-[350px] flex-shrink-0 items-center lg:items-start cursor-pointer duration-300 hover:scale-105"
-              >
+            <Link
+              key={item.id}
+              href={item.link}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div className="flex flex-col gap-5 max-w-[350px] min-w-[350px] flex-shrink-0 items-center lg:items-start cursor-pointer duration-300 hover:scale-105">
                 <div className="flex relative">
                   <Image
                     width={350}
