@@ -80,7 +80,7 @@ const Projects = () => {
                   <h5 className="text-xl font-medium mb-2">{item.title}</h5>
                   <p className="text-xs text-secondary">{item.description}</p>
                 </div>
-                <button className=" text-white rounded-full w-40 h-10 bg-violet duration-300 hover:bg-white hover:text-violet">
+                <button className=" text-white rounded-full w-40 h-10 bg-violet duration-300 hover:bg-secondary hover:text-violet">
                   Подробнее
                 </button>
               </div>
