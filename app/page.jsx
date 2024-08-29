@@ -11,7 +11,6 @@ import { useState } from "react";
 export default function Home() {
   const [isSidebarVisible, setIsSidebarVisible] = useState(false);
   return (
-    // <div>
       <div className="pr-4 pl-4 ">
         <div>
           <SidebarComponent
@@ -38,6 +37,5 @@ export default function Home() {
         </div>
         <Footer />
       </div>
-    // {/* </div> */}
   );
 }
