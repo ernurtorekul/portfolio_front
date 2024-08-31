@@ -9,5 +9,44 @@
     "h1": "Front-end React Developer 👋",
     "p": "Hello, I'm Ernur, a Front-end React Developer based in Kazakhstan. 📍",
     "p2": "Tech Stack"
+  },
+  "about": {
+    "h1": "Crafting Modern, Intuitive Interfaces",
+    "p": "I love creating clean and user-friendly designs that make using websites easy and enjoyable. I'm always learning new technologies to keep improving.",
+    "p2": "My expertise includes:"
+  },
+  "projects": {
+    "h1": "Projects",
+    "p": "Here are some of the best projects I've completed for my valuedclients. ",
+    "button": "Learn More",
+    "list": {
+      "medturist": {
+        "title": "Medical Center Match in India",
+        "description": "Dynamic web-platform for finding the Best Medical Centers in India based on your diagnosis",
+        "type1": "Web Development",
+        "type2": "Medicine and Health",
+        "type3": "Interactive Content and Dynamic Features"
+      },
+      "sbs-consulting": {
+        "title": "A Web Platform for Studying Abroad",
+        "description": "Comprehensive website for students who wants to Study Abroad",
+        "type1": "Web Development",
+        "type2": "Education and Student Life",
+        "type3": "Multi-page and Dynamic Features"
+      },
+      "contactSavvy": {
+        "title": "Personalized Contact Manager",
+        "description": "ContactSavvy: Smart Contact Organizer",
+        "type1": "Web Development",
+        "type2": "Personalization and User Experience",
+        "type3": "Responsive and Secure Design"
+      }
+    }
+  },
+  "contact":{
+    "h1": "Contact Me",
+    "p": "Whether you have a question, a project idea, or just want to say hello, I'd love to hear from you. I'm always open to discussing new opportunities, collaborations, or simply sharing thoughts. Feel free to reach out, and I'll get back to you as soon as possible!",
+    "h2": "Get in Touch",
+    "button": "Get in Touch"
   }
 }

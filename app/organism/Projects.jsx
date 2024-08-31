@@ -1,45 +1,45 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-
+import UseLanguage from "../lang/useLanguage";
 const Projects = () => {
+  const { t } = UseLanguage();
+
   const portfolioList = [
     {
       id: 1,
       img: "/projects/medturist.jpg",
-      title: "Medical Center Match in India ",
+      titleKey: "projects.list.medturist.title",
       link: "https://medturist.kz/",
-      description:
-        "Dynamic web-platform for finding the Best Medical Centers in India based on your diagnosis",
+      descriptionKey:"projects.list.medturist.description",
       project: {
-        type1: "Web Development",
-        type2: "Medicine and Health",
-        type3: "Interactive Content and Dynamic Features",
+        type1: "projects.list.medturist.type1",
+        type2: "projects.list.medturist.type2",
+        type3: "projects.list.medturist.type3",
       },
     },
     {
       id: 2,
       img: "/projects/sbs-consulting.jpg",
-      title: "A Web Platform for Studying Abroad",
+      titleKey: "projects.list.sbs-consulting.title",
       link: "https://sbsconsulting.kz",
-      description:
-        "Comprehensive website for students who wants to Study Abroad",
+      descriptionKey:"projects.list.sbs-consulting.description",
       project: {
-        type1: "Web Development",
-        type2: "Education and Student Life",
-        type3: "Multi-page and Dynamic Features",
+        type1: "projects.list.sbs-consulting.type1",
+        type2: "projects.list.sbs-consulting.type2",
+        type3: "projects.list.sbs-consulting.type3",
       },
     },
     {
       id: 3,
       img: "/projects/contactsavvy.png",
-      title: "Personalized Contact Manager",
+      titleKey: "projects.list.contactSavvy.title",
       link: "https://github.com/ernurtorekul/ContactSavvy",
-      description: "ContactSavvy: Smart Contact Organizer",
+      descriptionKey:"projects.list.contactSavvy.description",
       project: {
-        type1: "Web Development",
-        type2: "Personalization and User Experience",
-        type3: "Responsive and Secure Design",
+        type1: "projects.list.contactSavvy.type1",
+        type2: "projects.list.contactSavvy.type3",
+        type3: "projects.list.contactSavvy.type2",
       },
     },
   ];
@@ -50,10 +50,9 @@ const Projects = () => {
         id="projects"
         className="lg:ml-1/6 flex flex-col items-center gap-5 bg-secondary py-20"
       >
-        <h4 className="text-4xl font-semibold">Projects</h4>
+        <h4 className="text-4xl font-semibold">{t("projects.h1")}</h4>
         <p className="w-2/3 lg:w-full text-lg text-center text-secondary">
-          Here are some of the best projects I&apos;ve completed for my valued
-          clients.
+          {t("projects.p")}
         </p>
         <div className="flex gap-10 w-[100%] overflow-x-auto scrollbar scrollbar-thumb-gray-900 scrollbar-track-gray-300 justify-start px-5 lg:px-20 pb-10">
           {portfolioList.map((item) => (
@@ -73,17 +72,17 @@ const Projects = () => {
                     className="rounded-[40px] blur-sm hover:blur-none"
                   />
                   <div className="z-10 absolute bottom-0 flex flex-col items-start text-violet border-violet p-5 gap-2 text-sm">
-                    <button className="white-btn">{item.project.type1}</button>
-                    <button className="white-btn">{item.project.type2}</button>
-                    <button className="white-btn">{item.project.type3}</button>
+                    <button className="white-btn text-left">{t(item.project.type1)}</button>
+                    <button className="white-btn text-left">{t(item.project.type2)}</button>
+                    <button className="white-btn text-left">{t(item.project.type3)}</button>
                   </div>
                 </div>
                 <div className="pl-2">
-                  <h5 className="text-xl font-medium mb-2">{item.title}</h5>
-                  <p className="text-xs text-secondary">{item.description}</p>
+                  <h5 className="text-xl font-medium mb-2">{t(item.titleKey)}</h5>
+                  <p className="text-xs text-secondary">{t(item.descriptionKey)}</p>
                 </div>
                 <button className=" text-white rounded-full w-40 h-10 bg-violet duration-300 hover:bg-secondary hover:text-violet">
-                  Подробнее
+                  {t("projects.button")}
                 </button>
               </div>
             </Link>

@@ -2,8 +2,10 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import Loader from "../components/Loader";
+import UseLanguage from "../lang/useLanguage";
 
 const Contact = () => {
+  const { t } = UseLanguage();
   const [errorMessage, setErrorMessage] = useState();
   const [isLoading, setIsLoading] = useState();
 
@@ -61,9 +63,11 @@ const Contact = () => {
       {isLoading && <Loader />}
 
       <div className="flex flex-col gap-5 w-full lg:w-1/2 items-center lg:items-start text-center lg:text-start">
-        <h5 className="font-semibold text-3xl text-violet mb-2">Contact Me</h5>
+        <h5 className="font-semibold text-3xl text-violet mb-2">
+          {t("contact.h1")}
+        </h5>
         <p className="w-full lg:w-3/4 text-lg text-secondary mb-4">
-          Whether you have a question, a project idea, or just want to say hello, I&apos;d love to hear from you. I&apos;m always open to discussing new opportunities, collaborations, or simply sharing thoughts. Feel free to reach out, and I&apos;ll get back to you as soon as possible!
+          {t("contact.p")}
         </p>
       </div>
 
@@ -71,7 +75,9 @@ const Contact = () => {
         className="bg-secondary flex flex-col gap-5 px-8 py-10 rounded-2xl w-full lg:w-1/2"
         onSubmit={handleSubmit}
       >
-        <h5 className="font-medium text-2xl text-violet mb-4">Get in Touch</h5>
+        <h5 className="font-medium text-2xl text-violet mb-4">
+          {t("contact.h2")}
+        </h5>
         <div className="flex flex-col gap-4">
           <div>
             <input
@@ -101,7 +107,7 @@ const Contact = () => {
           className="bg-violet text-white font-semibold rounded-lg w-full py-3 mt-4 duration-300 hover:bg-secondary hover:text-violet border border-violet"
           type="submit"
         >
-          Send Message
+          {t("contact.button")}
         </button>
       </form>
     </section>
