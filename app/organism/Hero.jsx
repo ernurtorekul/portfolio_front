@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { CONTACTS } from "../constants/constants";
 import { SOCIAL_LINKS } from "../constants/constants";
+import UseLanguage from "../lang/useLanguage";
 
 export default function Hero() {
   const stackList = [
@@ -14,6 +15,7 @@ export default function Hero() {
     "tailwind_sass.svg",
     "ant_material.svg",
   ];
+  const { t } = UseLanguage();
   return (
     <div className="bg-secondary">
       <section className="lg:ml-[16.666%] px-20 pb-20 bg-secondary lg:justify-center lg:p-20 ">
@@ -21,12 +23,9 @@ export default function Hero() {
           <div className="flex flex-col-reverse  gap-15 lg:flex lg:flex-row items-center">
             <div className="flex flex-col gap-10 lg:items-start items-center text-center lg:text-start	">
               <h1 className="text-5xl sm:text-6xl font-bold mt-10 lg:mt-0">
-                Front-end React Developer 👋
+                {t("hero.h1")}
               </h1>
-              <p className="text-xl w-full lg:w-2/3">
-                Hello, I&apos;m Ernur, a Front-end React Developer based in
-                Kazakhstan.📍
-              </p>
+              <p className="text-xl w-full lg:w-2/3">{t("hero.p")}</p>
               <div className="flex gap-5">
                 <button>
                   <Link
@@ -38,7 +37,11 @@ export default function Hero() {
                   </Link>
                 </button>
                 <button>
-                  <Link href={SOCIAL_LINKS.GITHUB} target="_blank" rel="noreferrer">
+                  <Link
+                    href={SOCIAL_LINKS.GITHUB}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <Github className="w-7 h-7 hover:text-secondary transition-all duration-200" />
                   </Link>
                 </button>
@@ -58,7 +61,7 @@ export default function Hero() {
             />
           </div>
           <div className="stack flex flex-col lg:flex-row lg:flex gap-3 lg:gap-10 mt-20 items-center">
-            <p>Tech Stack</p>
+            <p>{t("hero.p2")}</p>
             <p className="text-2xl rotate-90 lg:rotate-0 ">|</p>
             <ul className="flex gap-1 sm:gap-10 w-full">
               {stackList.map((item) => (

@@ -1,3 +1,13 @@
 {
-  "greeting": "hello"
+  "header": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "h1": "Front-end React Developer 👋",
+    "p": "Hello, I'm Ernur, a Front-end React Developer based in Kazakhstan. 📍",
+    "p2": "Tech Stack"
+  }
 }
