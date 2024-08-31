@@ -18,7 +18,7 @@ const Languages = () => {
       if (english < 85) {
         setEnglish((prevCount) => prevCount + 1);
       }
-      if (russian < 88) {
+      if (russian < 90) {
         setRussian((prevCount) => prevCount + 1);
       }
     }, 30);
