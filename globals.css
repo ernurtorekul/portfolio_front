@@ -94,8 +94,8 @@ ul a:hover {
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
     transition: all 1s ease-in-out;
     border: 3px solid #f9f9f9; /* Using secondary color */
-    box-shadow: 0 0 20px #f9f9f9, 0 0 40px #111827, 0 0 60px #ffffff; /* Secondary, violet, and white */
-    /* background: linear-gradient(135deg, #f9f9f9 0%, #111827 50%, #ffffff 100%); */
+    box-shadow: 0 0 20px #f9f9f9, 0 0 40px #111827, 0 0 60px #ffffff;  
+    background: linear-gradient(135deg, #f9f9f9 0%, #111827 50%, #ffffff 100%);
 }
 
 @keyframes colorChange {
@@ -127,10 +127,10 @@ ul a:hover {
 
 @keyframes pulse {
     0%, 100% {
-        box-shadow: 0 0 20px #f9f9f9, 0 0 40px #111827, 0 0 60px #ffffff; 
+        box-shadow: 0 0 20px #f9f9f9, 0 0 40px #1f2532, 0 0 60px #ffffff; 
     }
     50% {
-        box-shadow: 0 0 40px #f9f9f9, 0 0 80px #111827, 0 0 120px #ffffff; 
+        box-shadow: 0 0 40px #f9f9f9, 0 0 80px #0d0f16, 0 0 120px #ffffff; 
     }
 }
 
