@@ -1,8 +1,11 @@
 "use client";
 import { Progress } from "antd";
 import { useEffect, useState } from "react";
+import UseLanguage from "../../lang/useLanguage";
 
 const Languages = () => {
+  const { t } = UseLanguage();
+
   const [kazakh, setKazakh] = useState(0);
   const [english, setEnglish] = useState(0);
   const [russian, setRussian] = useState(0);
@@ -22,11 +25,11 @@ const Languages = () => {
 
     return () => clearInterval(timer);
   }, [kazakh, english, russian]);
-  
+
   return (
     <div className="flex flex-col space-y-1 pt-6 p-2">
       <div className="flex flex-col gap-y-4">
-        <span className=" text-md font-bold">Languages</span>
+        <span className=" text-md font-bold">{t("sidebar.languages.h1")}</span>
         <div className="flex flex-row items-center justify-center space-x-6">
           <div className="flex flex-col items-center justify-center gap-y-2">
             <Progress
@@ -35,7 +38,9 @@ const Languages = () => {
               percent={kazakh}
               size={90}
             />
-            <span className="text-sm font-bold">Kazakh</span>
+            <span className="text-sm font-bold">
+              {t("sidebar.languages.kaz")}
+            </span>
           </div>
           <div className="flex flex-col items-center justify-center gap-y-2">
             <Progress
@@ -44,7 +49,9 @@ const Languages = () => {
               percent={english}
               size={90}
             />
-            <span className="text-sm font-bold">English</span>
+            <span className="text-sm font-bold">
+              {t("sidebar.languages.eng")}
+            </span>
           </div>
         </div>
         <div className="flex flex-col items-center justify-center gap-y-2">
@@ -54,7 +61,9 @@ const Languages = () => {
             percent={russian}
             size={90}
           />
-          <span className="text-sm font-bold">Russian</span>
+          <span className="text-sm font-bold">
+            {t("sidebar.languages.rus")}
+          </span>
         </div>
       </div>
     </div>

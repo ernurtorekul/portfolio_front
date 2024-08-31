@@ -1,11 +1,11 @@
-export const NAME = "Ernur Torekul";
+// export const NAME = "Ernur Torekul";
+// 
+// export const DESIGNATION = "Front-end developer | Python developer";
 
-export const DESIGNATION = "Front-end developer | Python developer";
-
-export const DETAILS = {
-  Residence: "Kazakhstan",
-  Age: "20",
-};
+// export const DETAILS = {
+//   Residence: "Kazakhstan",
+//   Age: "20",
+// };
 
 export const SKILLS = [
   {

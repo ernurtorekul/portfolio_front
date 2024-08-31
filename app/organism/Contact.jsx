@@ -84,7 +84,7 @@ const Contact = () => {
               className="w-full p-4 rounded-lg outline-none border border-gray-300 focus:ring-2 focus:ring-violet focus:border-violet"
               type="email"
               name="email"
-              placeholder="E-mail"
+              placeholder={t("contact.placeholder")}
               required
             />
             {errorMessage && (
@@ -95,7 +95,7 @@ const Contact = () => {
             <textarea
               className="w-full h-32 p-4 rounded-lg outline-none border border-gray-300 focus:ring-2 focus:ring-violet focus:border-violet"
               name="message"
-              placeholder="Your Message"
+              placeholder={t("contact.placeholder2")}
               required
             />
             {errorMessage && (

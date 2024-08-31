@@ -43,10 +43,39 @@
       }
     }
   },
-  "contact":{
+  "contact": {
     "h1": "Contact Me",
     "p": "Whether you have a question, a project idea, or just want to say hello, I'd love to hear from you. I'm always open to discussing new opportunities, collaborations, or simply sharing thoughts. Feel free to reach out, and I'll get back to you as soon as possible!",
     "h2": "Get in Touch",
-    "button": "Get in Touch"
+    "button": "Get in Touch",
+    "placeholder": "E-mail",
+    "placeholder2": "your message"
+  },
+  "sidebar": {
+    "name": "Ernur Torekul",
+    "residence": "Residence",
+    "kazakhstan": "Kazakhstan",
+    "age": "Age",
+    "20": 20,
+    "designation": "Front-end developer | Python developer",
+    "languages": {
+      "h1": "Languages",
+      "kaz": "Kazakh",
+      "eng": "English",
+      "rus": "Russian"
+    },
+    "skills": {
+      "h1": "Experties and Competencies"
+    },
+    "tools": {
+      "h1": "Tools"
+    },
+    "contacts": {
+      "h1": "Email Address",
+      "h2": "Phone"
+    },
+    "download": {
+      "h1": "Download Resume"
+    }
   }
 }
