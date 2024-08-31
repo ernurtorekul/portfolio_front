@@ -53,8 +53,9 @@ export default function Hero() {
               </div>
             </div>
             <Image
-              src="/ernur.jpg"
-              className="hero-animate float-right brightness-150"
+              src="/ernur1.jpeg"
+              // className="hero-animate float-right brightness-150"
+              className="hero-animate float-right brightness-125"
               width={400}
               height={400}
               alt="heroBg"
