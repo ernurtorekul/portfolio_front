@@ -21,7 +21,8 @@ const Contact = () => {
 
     const serviceId = process.env.NEXT_PUBLIC_SERVICE_ID;
     const templateId = process.env.NEXT_PUBLIC_TEMPLATE_ID;
-    const privateKey = process.env.NEXT_PUBLIC_PRIVATE_KEY;
+    const publicKey = process.env.NEXT_PUBLIC_PRIVATE_KEY;
+    // const privateKey = process.env.NEXT_PUBLIC_PRIVATE_KEY;
 
     // NEXT_PUBLIC_SERVICE_ID='eAADnx4Eu4CWiG9n4'
     // NEXT_PUBLIC_TEMPLATE_ID='template_n675d23'
@@ -38,7 +39,7 @@ const Contact = () => {
       return;
     }
     try {
-      emailjs.sendForm(serviceId, templateId, form, privateKey).then(
+      emailjs.sendForm(serviceId, templateId, form, publicKey).then(
         () => {
           alert("Message sent successfully!");
           form.reset();
