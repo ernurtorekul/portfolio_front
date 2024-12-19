@@ -1,9 +1,9 @@
 "use client";
 import ChangeLang from "./changeLang";
-import UseLanguage from "../lang/useLanguage"
+import UseLanguage from "../lang/useLanguage";
 
 export function Header() {
-  const {t} = UseLanguage()
+  const { t } = UseLanguage();
 
   return (
     <div className="bg-primary">
@@ -11,6 +11,12 @@ export function Header() {
         <ChangeLang />
         <nav>
           <ul className="hidden lg:flex gap-5 font-normal h-[40px] items-center">
+            <a
+              href="https://drive.google.com/file/d/1SfzT1cOSkcTrYx05OV2bOpc0MAJLVhTu/view"
+              className="underline font-bold"
+            >
+              db
+            </a>
             <a href="#">{t("header.home")}</a>
             <a href="#about">{t("header.about")}</a>
             <a href="#projects">{t("header.projects")}</a>
