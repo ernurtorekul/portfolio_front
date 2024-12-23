@@ -12,7 +12,7 @@ export function Header() {
         <nav>
           <ul className="hidden lg:flex gap-5 font-normal h-[40px] items-center">
             <a
-              href="https://drive.google.com/file/d/1ljf3HFPBtvpawXPEkVRJKBHrgvG6Phdt/view?usp=sharing"
+              href="https://drive.google.com/file/d/1Sg7mBOZrfwLVW1ilLzpEuDrV5Piu4z-I/view?usp=sharing"
               className="underline font-bold"
             >
               akp korgau
