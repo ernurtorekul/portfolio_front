@@ -12,16 +12,10 @@ export function Header() {
         <nav>
           <ul className="hidden lg:flex gap-5 font-normal h-[40px] items-center">
             <a
-              href="https://drive.google.com/file/d/1D9F3_YxLRKw4EKuyC5fcjvSdI8SFj---/view?usp=sharing"
+              href="https://drive.google.com/file/d/1ljf3HFPBtvpawXPEkVRJKBHrgvG6Phdt/view?usp=sharing"
               className="underline font-bold"
             >
-              comp model
-            </a>
-            <a
-              href="https://drive.google.com/file/d/1mmQT5gk5shrrcdKFBzCQiAjdNVnIWkDU/view?usp=sharing"
-              className="underline font-bold"
-            >
-              san malimetter
+              akp korgau
             </a>
             <a href="#">{t("header.home")}</a>
             <a href="#about">{t("header.about")}</a>
