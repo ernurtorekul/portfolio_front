@@ -11,12 +11,12 @@ export function Header() {
         <ChangeLang />
         <nav>
           <ul className="hidden lg:flex gap-5 font-normal h-[40px] items-center">
-            <a
+            {/* <a
               href="https://drive.google.com/file/d/1Sg7mBOZrfwLVW1ilLzpEuDrV5Piu4z-I/view?usp=sharing"
               className="underline font-bold"
             >
               akp korgau
-            </a>
+            </a> */}
             <a href="#">{t("header.home")}</a>
             <a href="#about">{t("header.about")}</a>
             <a href="#projects">{t("header.projects")}</a>
