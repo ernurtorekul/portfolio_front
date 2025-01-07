@@ -7,6 +7,7 @@ import Hero from "./organism/Hero.jsx";
 import Projects from "./organism/Projects.jsx";
 import SidebarComponent from "./components/Sidebar.jsx";
 import { useState } from "react";
+import { Analytics } from '@vercel/analytics/next';
 
 export default function Home() {
   const [isSidebarVisible, setIsSidebarVisible] = useState(false);
@@ -28,6 +29,7 @@ export default function Home() {
             }`}
           >
             <div className="flex flex-col gap-10 ">
+              <Analytics/>
               <Hero />
               <About />
               <Projects />
