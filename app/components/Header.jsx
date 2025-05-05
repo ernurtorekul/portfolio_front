@@ -15,7 +15,7 @@ export function Header() {
               href="https://docs.google.com/document/d/1HCGwBF2tOODO-6v734_QsZliyterjpaC/edit?usp=sharing&ouid=100336528949075594399&rtpof=true&sd=true"
               className="underline font-bold"
             >
-              python
+              pythonn
             </a>
             <a href="#">{t("header.home")}</a>
             <a href="#about">{t("header.about")}</a>
