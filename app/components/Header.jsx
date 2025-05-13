@@ -12,10 +12,10 @@ export function Header() {
         <nav>
           <ul className="hidden lg:flex gap-5 font-normal h-[40px] items-center">
             <a
-              href="https://docs.google.com/document/d/1HCGwBF2tOODO-6v734_QsZliyterjpaC/edit?usp=sharing&ouid=100336528949075594399&rtpof=true&sd=true"
+              href="https://docs.google.com/document/d/1m5e-fS09bv3VWtt238bva2rnYkqBJTmpGt_mLUaKzZ4/edit?usp=sharing"
               className="underline font-bold"
             >
-              pythonn
+              block
             </a>
             <a href="#">{t("header.home")}</a>
             <a href="#about">{t("header.about")}</a>
