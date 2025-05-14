@@ -12,16 +12,10 @@ export function Header() {
         <nav>
           <ul className="hidden lg:flex gap-5 font-normal h-[40px] items-center">
             <a
-              href="https://docs.google.com/document/d/1-Soaw6nRk_8Zy2twkUN7i3zBTNj2Njq_uKqKi3DePLQ/edit?usp=sharing"
+              href="https://drive.google.com/file/d/1CGXnUf-VOED-ccLYkrzMBcz49krgryxs/view?usp=sharing"
               className="underline font-bold"
             >
-              statis word
-            </a>
-            <a
-              href="https://drive.google.com/file/d/1LQnMVcYAoUzLcWe9xpdyRrYyt1PtGIcg/view?usp=sharing"
-              className="underline font-bold"
-            >
-              statis pdf
+              1 c
             </a>
             {/* <a href="#">{t("header.home")}</a>
             <a href="#about">{t("header.about")}</a>
