@@ -4,6 +4,7 @@ import About from "./organism/About.jsx";
 import Contact from "./organism/Contact.jsx";
 import { Footer } from "./organism/Footer.jsx";
 import Hero from "./organism/Hero.jsx";
+import Exams from "./organism/Exams.jsx";
 import Projects from "./organism/Projects.jsx";
 import SidebarComponent from "./components/Sidebar.jsx";
 import { useState } from "react";
@@ -28,6 +29,7 @@ export default function Home() {
             }`}
           >
             <div className="flex flex-col gap-10 ">
+              <Exams/>
               <Hero />
               <About />
               <Projects />
