@@ -29,7 +29,7 @@ export default function Home() {
             }`}
           >
             <div className="flex flex-col gap-10 ">
-              <Exams/>
+              {/* <Exams/> */}
               <Hero />
               <About />
               <Projects />
