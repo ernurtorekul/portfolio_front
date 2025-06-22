@@ -34,6 +34,13 @@
         "type2": "Education and Student Life",
         "type3": "Multi-page and Dynamic Features"
       },
+      "ecommerce": {
+        "title": "E-commerce Platform",
+        "description": "A comprehensive e-commerce platform for online shopping.",
+        "type1": "Web Development (Tilda)",
+        "type2": "E-commerce",
+        "type3": "UI/UX Design"
+      },
       "contactSavvy": {
         "title": "Personalized Contact Manager",
         "description": "ContactSavvy: Smart Contact Organizer",

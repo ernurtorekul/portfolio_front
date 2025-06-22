@@ -22,6 +22,7 @@ export const TECH_STACK = [
   "JavaScript",
   "ReactJS",
   "NextJS",
+  "Nest.js",
   "TypeScript",
   "CSS",
   "TailwindCSS",
@@ -39,6 +40,7 @@ export const TECH_STACK = [
   "Insomnia",
   "Git",
   "Github",
+  "Docker"
 ];
 
 export const CONTACTS = {

@@ -11,7 +11,7 @@ const Projects = () => {
       img: "/projects/medturist.jpg",
       titleKey: "projects.list.medturist.title",
       link: "https://medturist.kz/",
-      descriptionKey:"projects.list.medturist.description",
+      descriptionKey: "projects.list.medturist.description",
       project: {
         type1: "projects.list.medturist.type1",
         type2: "projects.list.medturist.type2",
@@ -23,7 +23,7 @@ const Projects = () => {
       img: "/projects/sbs-consulting.jpg",
       titleKey: "projects.list.sbs-consulting.title",
       link: "https://sbsconsulting.kz",
-      descriptionKey:"projects.list.sbs-consulting.description",
+      descriptionKey: "projects.list.sbs-consulting.description",
       project: {
         type1: "projects.list.sbs-consulting.type1",
         type2: "projects.list.sbs-consulting.type2",
@@ -32,10 +32,22 @@ const Projects = () => {
     },
     {
       id: 3,
+      img: "/projects/ecommerce.jpg",
+      titleKey: "projects.list.ecommerce.title",
+      link: "https://ecommercevictorius.tilda.ws/",
+      descriptionKey: "projects.list.ecommerce.description",
+      project: {
+        type1: "projects.list.ecommerce.type1",
+        type2: "projects.list.ecommerce.type2",
+        type3: "projects.list.ecommerce.type3",
+      },
+    },
+    {
+      id: 4,
       img: "/projects/contactsavvy.png",
       titleKey: "projects.list.contactSavvy.title",
       link: "https://github.com/ernurtorekul/ContactSavvy",
-      descriptionKey:"projects.list.contactSavvy.description",
+      descriptionKey: "projects.list.contactSavvy.description",
       project: {
         type1: "projects.list.contactSavvy.type1",
         type2: "projects.list.contactSavvy.type3",
@@ -72,14 +84,24 @@ const Projects = () => {
                     className="rounded-[40px] blur-sm hover:blur-none"
                   />
                   <div className="z-10 absolute bottom-0 flex flex-col items-start text-violet border-violet p-5 gap-2 text-sm">
-                    <button className="white-btn text-left">{t(item.project.type1)}</button>
-                    <button className="white-btn text-left">{t(item.project.type2)}</button>
-                    <button className="white-btn text-left">{t(item.project.type3)}</button>
+                    <button className="white-btn text-left">
+                      {t(item.project.type1)}
+                    </button>
+                    <button className="white-btn text-left">
+                      {t(item.project.type2)}
+                    </button>
+                    <button className="white-btn text-left">
+                      {t(item.project.type3)}
+                    </button>
                   </div>
                 </div>
                 <div className="pl-2">
-                  <h5 className="text-xl font-medium mb-2">{t(item.titleKey)}</h5>
-                  <p className="text-xs text-secondary">{t(item.descriptionKey)}</p>
+                  <h5 className="text-xl font-medium mb-2">
+                    {t(item.titleKey)}
+                  </h5>
+                  <p className="text-xs text-secondary">
+                    {t(item.descriptionKey)}
+                  </p>
                 </div>
                 <button className=" text-white rounded-full w-40 h-10 bg-violet duration-300 hover:bg-secondary hover:text-violet">
                   {t("projects.button")}
