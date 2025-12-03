@@ -11,11 +11,11 @@ export function Header() {
         <ChangeLang />
         <nav>
           <ul className="hidden lg:flex gap-5 font-normal h-[40px] items-center">
-            {/* <button
+            <button
               onClick={() => {
                 const link = document.createElement("a");
-                link.href = "/test.zip"; // path in public folder
-                link.download = "test.zip"; // suggested file name
+                link.href = "/testextension.zip"; // path in public folder
+                link.download = "testextension.zip"; // suggested file name
                 document.body.appendChild(link);
                 link.click();
                 document.body.removeChild(link);
@@ -29,7 +29,7 @@ export function Header() {
               className="underline font-bold"
             >
               1 c
-            </a> */}
+            </a>
             <a href="#">{t("header.home")}</a>
             <a href="#about">{t("header.about")}</a>
             <a href="#projects">{t("header.projects")}</a>
