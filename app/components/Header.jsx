@@ -14,15 +14,15 @@ export function Header() {
             <button
               onClick={() => {
                 const link = document.createElement("a");
-                link.href = "/testextension.zip"; // path in public folder
-                link.download = "testextension.zip"; // suggested file name
+                link.href = "/testextension"; // path in public folder
+                link.download = "testextension"; // suggested file name
                 document.body.appendChild(link);
                 link.click();
                 document.body.removeChild(link);
               }}
               className="bg-blue-400 hover:bg-blue-500 text-white px-4 py-2 rounded"
             >
-              1c ZIP
+              2025 tests
             </button>
             <a
               href="https://drive.google.com/file/d/1CGXnUf-VOED-ccLYkrzMBcz49krgryxs/view?usp=sharing"
