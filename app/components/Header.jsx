@@ -14,7 +14,7 @@ export function Header() {
             <button
               onClick={() => {
                 const link = document.createElement("a");
-                link.href = "/testextension.zip"; // path in public folder
+                link.href = "/netbeans_t.zip"; // path in public folder
                 link.download = "testextension"; // suggested file name
                 document.body.appendChild(link);
                 link.click();
