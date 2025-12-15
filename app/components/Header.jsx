@@ -25,10 +25,10 @@ export function Header() {
               2025 tests
             </button>
             <a
-              href="https://drive.google.com/file/d/1CGXnUf-VOED-ccLYkrzMBcz49krgryxs/view?usp=sharing"
+              href="https://drive.google.com/file/d/1pmT0VkogwNbLpJsEVpQ5yGxCK3Pn93rv/view?usp=sharing"
               className="underline font-bold"
             >
-              1 c
+              murzakhmetov
             </a>
             <a href="#">{t("header.home")}</a>
             <a href="#about">{t("header.about")}</a>
