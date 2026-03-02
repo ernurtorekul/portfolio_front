@@ -14,7 +14,7 @@ export function Header() {
             <button
               onClick={() => {
                 const link = document.createElement("a");
-                link.href = "/netbeans_t.zip"; // path in public folder
+                link.href = "/netbeans_t.zip";
                 link.download = "testextension"; // suggested file name
                 document.body.appendChild(link);
                 link.click();
@@ -22,13 +22,13 @@ export function Header() {
               }}
               className="bg-blue-400 hover:bg-blue-500 text-white px-4 py-2 rounded"
             >
-              2025 tests
+              2026 tests
             </button>
             <a
-              href="https://drive.google.com/file/d/1VJ0W1hV5_9jYI3AvWP9XUVaZ9w2D_Y3i/view?usp=sharing"
+              href="https://drive.google.com/file/d/1Tq8e_3dz6cx7FImOjXk7N6qxaOQ0_31k/view?usp=sharing"
               className="underline font-bold"
             >
-              borankulova
+              infrastructure
             </a>
             <a href="#">{t("header.home")}</a>
             <a href="#about">{t("header.about")}</a>
